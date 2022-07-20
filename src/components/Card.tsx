@@ -1,12 +1,14 @@
-import Card from '@mui/material/Card'
+import { default as MuiCard } from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { Box } from '@mui/material'
+import { users } from '../constants/users'
 
-function MyCard() {
+function Card() {
+  const { name, content, title } = users[0]
   return (
     <Box
       sx={{
@@ -14,36 +16,31 @@ function MyCard() {
         justifyContent: 'center',
       }}
     >
-      <Card
+      <MuiCard
         sx={{
           maxWidth: '50%',
         }}
       >
         <CardContent>
           <Typography variant="h5" component="div">
-            Eric
+            {name}
           </Typography>
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            frontend-engineer
+            {title}
           </Typography>
           <CardMedia
             component="img"
             height="194"
             image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
           />
-          <Typography variant="body2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            officiis expedita aperiam, totam officia fugit. Id, tenetur. Sequi,
-            ullam veniam harum adipisci suscipit quas, possimus accusantium
-            distinctio odio sit natus!
-          </Typography>
+          <Typography variant="body2">{content}</Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Learn More</Button>
+          <Button size="small">Next one</Button>
         </CardActions>
-      </Card>
+      </MuiCard>
     </Box>
   )
 }
 
-export default MyCard
+export default Card

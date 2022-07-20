@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css'
-import MyCard from './components/MyCard'
+import Container from './components/Container'
 
 function App() {
   return (
     <div>
-      <MyCard />
+      <Container />
     </div>
   )
 }
