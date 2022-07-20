@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# React 
+## Typescript
+-  TypeScript is a strongly typed programming language that builds on JavaScript
+-  save u from some bugs
+- [Beginner](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## React
+ - SPA 
+ - Famework vs libery?
+ - why the modern framwork? benefit?
+   - what's the pain?
+     - html,css,js
+     - state flow
+     - skip the pefromance/auto part
+ - let's look the prj (create react app)
+   - package.json
+      - dependency
+      - run serve, run build
+   - module bundler- webpack
+      - [how to config](https://snh90100.medium.com/%E5%9C%A8-create-react-app-%E4%B8%AD%E4%BF%AE%E6%94%B9-webpack-%E8%A8%AD%E5%AE%9A-%E4%BB%A5%E8%AA%BF%E6%95%B4-webpack-alias-%E7%82%BA%E4%BE%8B-59fd9eeeffe7)
+   - React mechanism:
+      - JSX - [babel](https://babeljs.io/) 
+      - every render create a node linked structure =>Virtual DOM
+      - what react do for us is the steps of compare/update real dom (Reconciliation)
+      - when would we need to compare
+      - component base (Fn,Object) 
+      - how DOM update: state change , parent render
+      - higj level (container/smart) componethandle logic,low level(dummy) comp just render what it got 
+        - props are readonly
+   ### Features:
+   - Css solution:
+      -  there are many solutions  : [material-ui](https://mui.com/zh/)
+   - Immuatable props and state lift
+   - useEffect
+   - Context and Composition
 
-In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
